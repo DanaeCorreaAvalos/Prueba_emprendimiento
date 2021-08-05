@@ -1,0 +1,12 @@
+.etiqueta {
+  animation: 3s translate infinite linear alternate;
+  -webkit-animation: 3s translate infinite linear alternate;
+}
+
+.tuerca {
+  &__interna,&__externa {
+  animation: 4s rotate infinite linear;
+  transform-origin: 80% 80% ;
+  -webkit-animation: 4s rotate infinite linear;
+}
+}

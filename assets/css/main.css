@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: #000000;
+}
+
+.item1 {
+  width: calc 50%;
+}
+.item1 .item1__imagen {
+  width: calc 50%;
+}
+.item1 .item1__imagen .iconos {
+  width: calc 50%;
+}
+
+.item2 {
+  width: calc 50%;
+}
+
+.grid-container {
+  display: flex;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+@keyframes translate {
+  0% {
+    transform: translateX(160px);
+    -webkit-transform: translateX(160px);
+    -moz-transform: translateX(160px);
+    -ms-transform: translateX(160px);
+    -o-transform: translateX(160px);
+  }
+  100% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+.etiqueta {
+  animation: 3s translate infinite linear alternate;
+  -webkit-animation: 3s translate infinite linear alternate;
+}
+
+.tuerca__interna, .tuerca__externa {
+  animation: 4s rotate infinite linear;
+  transform-origin: 80% 80%;
+  -webkit-animation: 4s rotate infinite linear;
+}
+
+/*# sourceMappingURL=main.css.map */
